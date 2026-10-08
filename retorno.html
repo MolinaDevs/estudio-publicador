@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Autorização recebida</title>
+<style>
+:root{--fundo:#fafaf8;--texto:#1d1d1f;--suave:#5f5f66;--borda:#e2e0da}
+@media (prefers-color-scheme:dark){:root{--fundo:#141416;--texto:#ececef;--suave:#a0a0a8;--borda:#2c2c31}}
+body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:640px;margin:0 auto;padding:48px 16px}code{display:block;word-break:break-all;padding:12px;
+border:1px solid var(--borda);border-radius:10px;font-size:13px}.sub{color:var(--suave)}
+</style>
+</head>
+<body><main>
+<h1>Autorização recebida</h1>
+<p>Copie o endereço completo desta página (barra de endereços) e cole no terminal onde você rodou
+<b>tiktok-autorizar</b>.</p>
+<p class="sub">Esta página não envia nada para lugar nenhum: o código só existe no seu navegador.</p>
+<code id="endereco"></code>
+<script>document.getElementById('endereco').textContent = location.href;</script>
+</main></body>
+</html>
